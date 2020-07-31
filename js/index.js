@@ -1,5 +1,5 @@
-const uri = 'https://script.google.com/macros/s/AKfycbxyacpN8y4nxSAnU0Eji6E_rBRDFTY7YoWWFa0clY5ELRhskgpt/exec';
-const id = '1BpGnuwC4lZf9G2yFyiSrxbJuGO8gviV8mr-I2D3x4vA';
+const uri = '';
+const id = '';
 const sheet = 'studio';
 const endpoint = `${uri}?id=${id}&sheet=${sheet}`;
 
