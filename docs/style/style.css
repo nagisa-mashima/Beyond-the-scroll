@@ -32,19 +32,16 @@ body {
 .section1 {
   background: #4b0082;
   text-align: center;
-  position: absolute;
   top: -24px;
   color: #ffffff;
 }
 .section2 {
   background: #ffddff;
-  text-align: center;
-  position: absolute;
+  text-align: center；
 }
 .section3 {
   background: #ffffee;
-  text-align: center;
-  position: absolute;
+  text-align: center；
 }
 
 .scroll {
