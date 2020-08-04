@@ -49,23 +49,23 @@ body {
   z-index: -1;
 }
 .wrapper {
-  background: #ddd;
+  background: #FFDDFF;
   padding: 20px;
 }
 .background1 {
-  background: #fdd;
+  background: #FFFFDD	;
 }
 .background2 {
-  background: #cdd;
+  background: #DDFFFF;
 }
 .background3 {
-  background: #dfd;
+  background: #CEF9DC;
 }
 .background4 {
-  background: #dcd;
+  background: #EAD9FF;
 }
 .background5 {
-  background: #fff;
+  background: #FFDBC9;
 }
 
 #animation {
