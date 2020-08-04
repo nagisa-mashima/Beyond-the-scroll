@@ -27,6 +27,7 @@ var scrollElm = (function () {
   
   // セクション要素のdata-z属性を取得し、transformを設定
   // 最後のセクション要素のdata-zを元に、画面の高さを計算して設定
+  
   for (var i = 0; sections.length > i; i++) {
     var itemZ = sections[i].getAttribute("data-z");
     sections[i].style.transform = "translateZ(" + -itemZ + "px)";
