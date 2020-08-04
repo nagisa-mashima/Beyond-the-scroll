@@ -76,22 +76,15 @@ p {
 }
 .background5 {
   background: #EAD9FF;
-
-
-#animation {
-  font-size: 20px;
-  font-weight: bold;
-  color: #000;
-  position: relative;
 }
 
 .fadeInDown {
   -webkit-animation-fill-mode: both;
   -ms-animation-fill-mode: both;
   animation-fill-mode: both;
-  -webkit-animation-duration: 1s;
-  -ms-animation-duration: 1s;
-  animation-duration: 1s;
+  -webkit-animation-duration: 2s;
+  -ms-animation-duration: 2s;
+  animation-duration: 2s;
   -webkit-animation-name: fadeInDown;
   animation-name: fadeInDown;
   visibility: visible !important;
