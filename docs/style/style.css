@@ -30,18 +30,18 @@ body {
   left: 0;
 }
 .section-1 {
-  background:#DDD;
+  background:#4B0082;
   text-align: center;
   position: absolute;
   color: #ffffff;
 }
 .section-2 {
-  background: #FDD;
+  background: #FFAAFF;
   text-align: center;
   position: absolute;
 }
 .section-3 {
-  background: #CDD;
+  background: #FFFFEE;
   text-align: center;
   position: absolute;
 }
@@ -49,6 +49,25 @@ body {
 .scroll {
   visibility: hidden;
   z-index: -1;
+}
+.wrapper {
+  background: #DDD;
+  padding: 20px;
+}
+.background1 {
+  background: #FDD;
+}
+.background2 {
+  background: #CDD;
+}
+.background3 {
+  background: #DFD;
+}
+.background4 {
+  background: #DCD;
+}
+.background5 {
+  background: #FFF;
 }
 
 #animation {
