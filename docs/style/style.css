@@ -38,12 +38,7 @@ body {
 .section-3 {
   background: #663399;
 }
-.section-4 {
-  background: #ff0;
-}
-.section-5 {
-  background: #0ff;
-}
+
 .scroll {
   visibility: hidden;
   z-index: -1;
