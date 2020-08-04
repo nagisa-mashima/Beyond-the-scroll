@@ -30,18 +30,15 @@ body {
   left: 0;
 }
 .section-1 {
-  background:#4B0082;
   text-align: center;
   position: absolute;
   color: #ffffff;
 }
 .section-2 {
-  background: #FFDDFF;
   text-align: center;
   position: absolute;
 }
 .section-3 {
-  background: #FFFFEE;
   text-align: center;
   position: absolute;
 }
@@ -50,10 +47,7 @@ body {
   visibility: hidden;
   z-index: -1;
 }
-.wrapper {
-  background: #DDD;
-  padding: 20px;
-}
+
 .background1 {
   background: #FDD;
 }
