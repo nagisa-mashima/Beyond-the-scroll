@@ -39,7 +39,7 @@ $(window).scroll(function(){
      topWindow = $(window).scrollTop();
 $('#animation').each(function(){
   var targetPosition = $(this).offset().top;
-  if(topWindow > targetPosition - windowHeight + 100){
+  if(topWindow > targetPosition - windowHeight + 500){
    $(this).addClass("fadeInDown");
   }
  });
