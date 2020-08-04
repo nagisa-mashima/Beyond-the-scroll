@@ -19,7 +19,7 @@ var scrollElm = (function () {
   var scrollDiv = document.getElementById("scroll");
   
   $(function () {
-    for (let i = 1; i <= 3; i++) {
+    for (let i = 1; i <= 4; i++) {
       var num = Math.floor(5 * Math.random());
       $("div.section" + i).addClass("background" + num);
     }
