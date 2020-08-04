@@ -19,8 +19,10 @@ var scrollElm = (function () {
   var scrollDiv = document.getElementById("scroll");
   
   $(function () {
-    var num = Math.floor(5 * Math.random());
-    $("div.section-1").addClass("background" + num);
+    for (let i = 1; i <= 3; i++) {
+      var num = Math.floor(5 * Math.random());
+      $("div.section" + i).addClass("background" + num);
+    }
   });
   
   // セクション要素のdata-z属性を取得し、transformを設定
