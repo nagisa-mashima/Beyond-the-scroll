@@ -1,27 +1,36 @@
-document.getElementById('main').innerHTML = new Array(1000).fill(0).map((d,i) => `${i+1}行目…………………………`).join('<br />');
-
-function setup() {
-  createCanvas(window.innerWidth, window.innerHeight);
-  rectMode(CENTER);
-  colorMode(HSB, 360, 100, 100);
-}
-
-
-function draw() {
-  const brightness = 100 - constrain(window.scrollY / 100, 0, 60);
-  background(200, 20, brightness);
+// スクロール量を取得する要素を取得
+var scrollElm = (function() {
+    if('scrollingElement' in document) {
+      return document.scrollingElement;
+    }
+    if(navigator.userAgent.indexOf('WebKit') != -1) {
+      return document.body;
+    }
+    return document.documentElement;
+  })();
   
-  noStroke();
-  fill((window.scrollY * 0.1) % 360, 50, brightness, 0.5);
+  // 全てのセクション要素を取得
+  var sections = document.querySelectorAll('.section');
   
-  for (let i = -5; i <= 5; i++) {
-    push();
-    translate(width/2 + i * 200, 200);
-    const diffX = map(abs(width/2 + i * 200 - mouseX), 0, width, 1.5, 0);
-    scale(lerp(1, 1.25, sin(frameCount % 1000 / 1000.0 * TAU)) + diffX);
-    rotate(window.scrollY * 0.005);
-    square(0, 0, 100, 100, 25, 25, 25, 25);
-    pop();
+  // 全体をz方向に動かす#scaler要素を取得
+  var scaler = document.getElementById('scaler');
+  
+  // 画面の高さを設定する#scroll要素を取得
+  var scrollDiv = document.getElementById('scroll');
+  
+  // セクション要素のdata-z属性を取得し、transformを設定
+  // 最後のセクション要素のdata-zを元に、画面の高さを計算して設定
+  for(var i = 0; sections.length > i; i++) {
+    var itemZ = sections[i].getAttribute('data-z');
+    sections[i].style.transform = 'translateZ(' + - itemZ + 'px)';
+    if(i === sections.length -1) {
+      scrollDiv.style.height = itemZ * 100 + window.innerHeight + 'px';
+    }
   }
-}
-
+  
+  // スクロールイベントで、#scaler要素のtransformでz軸を動かす
+  window.addEventListener('scroll', function() {
+    scaler.style.transform = 'translateZ(' + scrollElm.scrollTop / 100 + 'px)';
+  });
+  
+  
