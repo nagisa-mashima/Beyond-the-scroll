@@ -1,22 +1,19 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;700&display=swap");
 body {
   margin: 0;
   padding: 0;
   background-color: #cccccc;
 }
-
-p{
-  font-family: 'Noto Sans JP', sans-serif;
+p {
+  font-family: "Noto Sans JP", sans-serif;
 }
-
 .base {
   width: 1000px;
   height: 500px;
   margin: auto;
   border: 2px solid #cccccc;
   position: fixed;
-  top: 50%;
+  top: 41%;
   left: 50%;
   transform: translate(-50%, -50%);
   perspective: 1px;
@@ -31,29 +28,34 @@ p{
   width: 100%;
   height: 100%;
   box-sizing: border-box;
-  padding: 30px;
-  position: absolute;
-  top: 0px;
-  left: 0;
+  position: relative;
 }
 .section p {
   text-align: center;
+  font-size: 1.5rem;
   font-weight: 300;
 }
 .section1 {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #fdd;
+  position: absolute;
 }
+
 .section2 {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #cdd;
+  position: absolute;
 }
 .section3 {
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background: #dfd;
+  position: absolute;
 }
 
 .scroll {
@@ -74,12 +76,13 @@ p{
 }
 .background5 {
   background: #EAD9FF;
-}
+
 
 #animation {
   font-size: 20px;
   font-weight: bold;
   color: #000;
+  position: relative;
 }
 
 .fadeInDown {
