@@ -58,13 +58,6 @@ p {
   background: #dfd;
   position: absolute;
 }
-.section4{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #FFFFEE;
-  position: absolute;
-}
 
 .scroll {
   visibility: hidden;
