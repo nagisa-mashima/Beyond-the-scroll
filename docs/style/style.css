@@ -1,7 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  background-color:#CCCCCC;
+  background-color: #cccccc;
 }
 .base {
   width: 1000px;
@@ -25,52 +25,50 @@ body {
   height: 100%;
   box-sizing: border-box;
   padding: 30px;
-  background: #f00;
   position: absolute;
-  top: -24px;
+  top: 0px;
   left: 0;
 }
-.section1 {
-  background: #4b0082;
+.section p {
   text-align: center;
-  top: -70px;
-  color: #ffffff;
+}
+.section1 {
+  display: grid;
+  place-items: center;
+  background: #fdd;
 }
 .section2 {
-  background: #ffddff;
-  text-align: center；
+  display: grid;
+  place-items: center;
+  background: #cdd;
 }
 .section3 {
-  background: #ffffee;
-  text-align: center；
+  display: grid;
+  place-items: center;
+  background: #dfd;
 }
 
 .scroll {
   visibility: hidden;
   z-index: -1;
 }
-.wrapper {
-  background: #FFDDFF;
-  padding: 20px;
-}
 .background1 {
-  background: #FFFFDD	;
+  background: #fdd;
 }
 .background2 {
-  background: #DDFFFF;
+  background: #cdd;
 }
 .background3 {
-  background: #CEF9DC;
+  background: #dfd;
 }
 .background4 {
-  background: #EAD9FF;
+  background: #dcd;
 }
 .background5 {
-  background: #FFDBC9;
+  background: #fff;
 }
 
 #animation {
-  margin: 50px 0;
   font-size: 20px;
   font-weight: bold;
   color: #000;
