@@ -33,6 +33,7 @@ body {
   background: #4b0082;
   text-align: center;
   position: absolute;
+  top: -24px;
   color: #ffffff;
 }
 .section2 {
