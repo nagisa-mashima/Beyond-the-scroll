@@ -6,10 +6,7 @@ body {
   width: 1000px;
   height: 500px;
   margin: auto;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-  border: 2px solid #000;
+  border: 2px solid #CCCCCC;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -34,12 +31,19 @@ body {
 }
 .section-1 {
   background:#FFFFEE;
+  text-align: center;
+  position: absolute;
 }
 .section-2 {
   background: #CC99FF;
+  text-align: center;
+  position: absolute;
 }
 .section-3 {
   background: #8A2BE2;
+  text-align: center;
+  position: absolute;
+  color: #ffffff;
 }
 
 .scroll {
