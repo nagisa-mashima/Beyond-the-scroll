@@ -34,6 +34,7 @@ p {
   text-align: center;
   font-size: 1.5rem;
   font-weight: 300;
+  color: #333333;
 }
 .section1 {
   display: flex;
@@ -51,6 +52,13 @@ p {
   position: absolute;
 }
 .section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #dfd;
+  position: absolute;
+}
+.section4{
   display: flex;
   justify-content: center;
   align-items: center;
