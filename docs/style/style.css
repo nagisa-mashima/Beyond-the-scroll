@@ -26,7 +26,7 @@ body {
   padding: 30px;
   background: #f00;
   position: absolute;
-  top: 0;
+  top: -24px;
   left: 0;
 }
 .section-1 {
