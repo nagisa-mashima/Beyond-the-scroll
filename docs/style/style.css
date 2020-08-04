@@ -53,19 +53,19 @@ body {
   z-index: -1;
 }
 .background1 {
-  background: #fdd;
+  background: #FFFFEE;
 }
 .background2 {
-  background: #cdd;
+  background: #EEFFFF;
 }
 .background3 {
-  background: #dfd;
+  background: #FFEEFF;
 }
 .background4 {
-  background: #dcd;
+  background: #E6FFE9;
 }
 .background5 {
-  background: #fff;
+  background: #EAD9FF;
 }
 
 #animation {
