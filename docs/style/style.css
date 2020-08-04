@@ -6,7 +6,6 @@ body {
   width: 1000px;
   height: 500px;
   margin: auto;
-  border: 2px solid #000;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -51,7 +50,7 @@ body {
   color:  #000;
   }
   
-  .fadeInDown {
+.fadeInDown {
    -webkit-animation-fill-mode:both;
    -ms-animation-fill-mode:both;
    animation-fill-mode:both;
@@ -62,11 +61,13 @@ body {
    animation-name: fadeInDown;
    visibility: visible !important;
   }
-  @-webkit-keyframes fadeInDown {
+
+@-webkit-keyframes fadeInDown {
    0% { opacity: 0; -webkit-transform: translateY(-20px); }
    100% { opacity: 1; -webkit-transform: translateY(0); }
   }
-  @keyframes fadeInDown {
+
+@keyframes fadeInDown {
    0% { opacity: 0; -webkit-transform: translateY(-20px); -ms-transform: translateY(-20px); transform: translateY(-20px); }
    100% { opacity: 1; -webkit-transform: translateY(0); -ms-transform: translateY(0); transform: translateY(0); }
   }
