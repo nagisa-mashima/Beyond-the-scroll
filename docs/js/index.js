@@ -17,6 +17,11 @@ var scrollElm = (function() {
   
   // 画面の高さを設定する#scroll要素を取得
   var scrollDiv = document.getElementById('scroll');
+
+  $(function () {
+    var num = Math.floor(3 * Math.random());
+    $('div.base').addClass('background' + num);
+});
   
   // セクション要素のdata-z属性を取得し、transformを設定
   // 最後のセクション要素のdata-zを元に、画面の高さを計算して設定
