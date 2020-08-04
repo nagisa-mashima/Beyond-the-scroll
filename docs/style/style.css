@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap");
 
 body {
   margin: 0;
@@ -39,7 +39,7 @@ p{
 }
 .section p {
   text-align: center;
-  font-weight: 400;
+  font-weight: 100;
 }
 .section1 {
   display: grid;
